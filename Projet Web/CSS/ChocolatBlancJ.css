@@ -1,0 +1,186 @@
+body {
+    background-color:#300b02;
+    height: 100%;
+    width: 100%;
+}
+header {
+    width: 100%;
+}
+body h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:  rgba(200, 173, 127, 0.900);
+}
+header nav{
+    background-color:  rgba(200, 173, 127, 0.900);
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+header nav ul li {
+    cursor: pointer;
+}
+.navbar {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
+    width: auto;
+}
+.menuc {
+    padding: 50px 50px;
+    position: relative;
+}
+.sousmenuc {
+    right: -30%;
+    position: absolute;
+    display: none;
+    width: 200px;
+    text-align: center;
+    height: 90px;
+    background-color: #300b02;
+    border-radius: 15px;
+}
+.menuc:hover .sousmenuc{
+    display: block;
+}
+.sousmenuc label {
+    color: rgba(200, 173, 127, 0.900);
+}
+.top {
+    align-items: center;
+    text-align: center;
+}
+.navbar:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+header nav ul li:hover {
+    border-bottom: 1 px black solid;
+}
+.var {
+    text-align: center;
+    width: 100%;
+    background-color:  rgba(200, 173, 127, 0.900);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+.var div {
+    border-right: 1px solid#300b02;
+    width: 33%;
+}
+.var div h1{
+    color:#300b02
+}
+.catalogue {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    height: 700px;
+}
+.produit {
+    background-color:  rgba(200, 173, 127, 0.900);
+    width: 30%;
+    height: 100%;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.article {
+    margin-left: 35%;
+    margin-top: 15px;
+    border-radius: 15px;
+    height: 30%;
+    width: 30%;
+    background-color:#300b02
+}
+footer {
+    display: flex;
+}
+.navbas ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.navbas {
+    margin-top: 40px;
+    background-color:  rgba(200, 173, 127, 0.900);
+    height: 30px;
+    width: 100%;
+    display: flex;
+}
+.cat {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.souscatalogue {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color:rgba(200, 173, 127, 0.900)
+}
+.souscatalogue a {
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #300b02;
+    width: auto;
+    border-bottom: 1px solid #300b02
+}
+.cat:hover .souscatalogue{
+    display: block;
+}
+.souscatalogue a:hover{
+    text-decoration: underline;
+}
+#a4 {
+    text-align: center;
+    background-image: url(b1.jpg);
+    background-size: cover;
+}
+#a4 {
+    color: black;
+    font-weight: bold;
+}
+#a5 {
+    text-align: center;
+    background-image: url(b2.jpg);
+    background-size: cover;
+}
+#a5 {
+    color: black;
+    font-weight: bold;
+}
+.btnc {
+    cursor: pointer;
+    justify-content: center;
+    background-color: #300b02;
+    border-radius: 15px;
+    padding: 8px 8px;
+    font-weight: bold;
+    color: rgba(200, 173, 127, 0.900);
+}
+.btnc:hover {
+    background-color: rgba(200, 173, 127, 0.900);
+    color: #300b02;
+    transition: background-color 1s linear;
+    transition: color 1s linear;
+    margin-top: 400px;
+}

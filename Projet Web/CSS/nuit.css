@@ -1,0 +1,230 @@
+body {
+    background-color: rgba(200, 173, 127, 0.900);
+    height: 100%;
+    width: 100%;
+}
+body h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #300b02;
+}
+header nav{
+    background-color: #300b02;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+header nav ul li {
+    cursor: pointer;
+}
+.navbar {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+    width: auto;
+}
+.menuc {
+    padding: 50px 50px;
+    position: relative;
+}
+.sousmenuc {
+    right: -30%;
+    position: absolute;
+    display: none;
+    width: 200px;
+    text-align: center;
+    height: 90px;
+    background-color: #300b02;
+    border-radius: 15px;
+}
+.menuc:hover .sousmenuc{
+    display: block;
+}
+.sousmenuc label {
+    color: rgba(200, 173, 127, 0.900);
+}
+.top {
+    align-items: center;
+    text-align: center;
+}
+.navbar:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+header nav ul li:hover {
+    border-bottom: 1 px black solid;
+}
+.Choc {
+    text-align: center;
+    width: 100%;
+    background-color: #300b02;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+.Choc div {
+    border-right: 1px solid rgba(200, 173, 127, 0.900);
+    width: 33%;
+}
+.Choc div h1{
+    color: rgba(200, 173, 127, 0.900);
+}
+.Choc2 {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.Choc2 section {
+    width: 25%;
+    height: 500px;
+    border-radius: 15%;
+    /* box-shadow: 0px 2px; */
+    position: relative;
+}
+.fly {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15%;
+    animation: moven 1s forwards;
+    
+}
+.carré1:hover .fly {
+    animation: move 1s forwards;
+}
+.carré2:hover .fly {
+    animation: move 1s forwards;
+}
+.carré3:hover .fly {
+    animation: move 1s forwards;
+}
+.carré1 {
+    overflow: hidden;
+    text-align: center;
+    background-image: url("chocn.jpg");
+    background-size: cover;
+}
+.carré2 {
+    text-align: center;
+    overflow: hidden;
+    background-image: url("chocl.jpg");
+    background-size: cover;
+    
+}
+.carré3 {
+    text-align: center;
+    overflow: hidden;
+    background-image: url("chocb.jpg");
+    background-size: cover;
+}
+@keyframes move {
+    0% {right: 100%;}
+    100% {right: 0%;}
+}
+@keyframes moven {
+    0% {right: 0%;}
+    100% {right: 100%;}
+    
+}
+.Cnoir {
+    margin: 0;
+    margin-bottom: 80%;
+    align-items: center;
+    font-size: 25px;
+    color: #300b02;
+    font-weight: bold;
+}
+.Clait {
+    margin: 0;
+    margin-bottom: 80%;
+    align-items: center;
+    font-size: 25px;
+    color: #300b02;
+    font-weight: bold;
+}
+.Cblanc {
+    margin: 0;
+    margin-bottom: 80%;
+    align-items: center;
+    font-size: 25px;
+    color: #300b02;
+    font-weight: bold;
+}
+.btnc {
+    cursor: pointer;
+    justify-content: center;
+    background-color: rgba(200, 173, 127, 0.900);
+    border-radius: 15px;
+    padding: 8px 8px;
+    font-weight: bold;
+    color: #300b02;
+}
+.btnc:hover {
+    background-color: #300b02;
+    color: rgba(200, 173, 127, 0.900);
+    transition: background-color 1s linear;
+    transition: color 1s linear;
+    margin-top: 400px;
+}
+.text {
+    font-size: 20px;
+    margin-top: -10px
+}
+footer {
+    display: flex;
+}
+.navbas ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.navbas {
+    margin-top: 80px;
+    background-color: #300b02;
+    height: 30px;
+    width: 100%;
+    display: flex;
+}
+.cat {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.souscatalogue {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: #300b02;
+}
+.souscatalogue a {
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+    width: auto;
+    border-bottom: 1px solid rgba(200, 173, 127, 0.900);
+}
+.cat:hover .souscatalogue{
+    display: block;
+}
+.souscatalogue a:hover{
+    text-decoration: underline;
+}
